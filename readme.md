@@ -10,47 +10,23 @@ Check if a [**Unist**][unist] [node][] is [**generated**][spec].
 npm install unist-util-generated
 ```
 
-**unist-util-generated** is also available as an AMD, CommonJS, and
-globals module, [uncompressed and compressed][releases].
-
 ## Usage
-
-Dependencies:
 
 ```javascript
 var generated = require('unist-util-generated');
-```
 
-Checks:
+generated({}); //=> true
 
-```javascript
-var a = generated({});
-var b = generated({
-    'position': {
-        'start': {},
-        'end': {}
-    }
-});
-var c = generated({
-    'position': {
-        'start': {
-            'line': 1,
-            'column': 1
-        },
-        'end': {
-            'line': 1,
-            'column': 2
-        }
-    }
-});
-```
+generated({
+  position: {start: {}, end: {}}
+}); //=> true
 
-Yields:
-
-```txt
-a: true
-b: true
-c: false
+generated({
+  position: {
+    start: {line: 1, column: 1},
+    end: {line: 1, column: 2}
+  }
+}); //=> false
 ```
 
 ## API
@@ -59,11 +35,13 @@ c: false
 
 Detect if [`node`][node] is [**generated**][spec].
 
-**Parameters**:
+###### Parameters
 
 *   `node` ([`Node`][node]) — Node to check.
 
-**Returns**: Whether `node` is generated.
+###### Returns
+
+`boolean` — Whether `node` is generated.
 
 ## License
 
@@ -80,8 +58,6 @@ Detect if [`node`][node] is [**generated**][spec].
 [coverage-page]: https://codecov.io/github/wooorm/unist-util-generated?branch=master
 
 [npm]: https://docs.npmjs.com/cli/install
-
-[releases]: https://github.com/wooorm/unist-util-generated/releases
 
 [license]: LICENSE
 
