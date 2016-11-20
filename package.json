@@ -11,10 +11,7 @@
     "util",
     "utility"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wooorm/unist-util-generated.git"
-  },
+  "repository": "https://github.com/wooorm/unist-util-generated",
   "bugs": "https://github.com/wooorm/unist-util-generated/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
