@@ -49,13 +49,13 @@ Detect if [`node`][node] is [**generated**][spec].
 
 <!-- Definition -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/unist-util-generated.svg
+[build-badge]: https://img.shields.io/travis/syntax-tree/unist-util-generated.svg
 
-[build-page]: https://travis-ci.org/wooorm/unist-util-generated
+[build-page]: https://travis-ci.org/syntax-tree/unist-util-generated
 
-[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/unist-util-generated.svg
+[coverage-badge]: https://img.shields.io/codecov/c/github/syntax-tree/unist-util-generated.svg
 
-[coverage-page]: https://codecov.io/github/wooorm/unist-util-generated?branch=master
+[coverage-page]: https://codecov.io/github/syntax-tree/unist-util-generated?branch=master
 
 [npm]: https://docs.npmjs.com/cli/install
 
@@ -63,8 +63,8 @@ Detect if [`node`][node] is [**generated**][spec].
 
 [author]: http://wooorm.com
 
-[unist]: https://github.com/wooorm/unist
+[unist]: https://github.com/syntax-tree/unist
 
-[node]: https://github.com/wooorm/unist#node
+[node]: https://github.com/syntax-tree/unist#node
 
-[spec]: https://github.com/wooorm/unist#location
+[spec]: https://github.com/syntax-tree/unist#location
