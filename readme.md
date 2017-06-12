@@ -43,6 +43,15 @@ Detect if [`node`][node] is [**generated**][spec].
 
 `boolean` — Whether `node` is generated.
 
+## Related
+
+*   [`unist-util-position`](https://github.com/syntax-tree/unist-util-position)
+    — Get the position of nodes
+*   [`unist-util-remove-position`](https://github.com/syntax-tree/unist-util-remove-position)
+    — Remove `position`s from a tree
+*   [`unist-util-stringify-position`](https://github.com/syntax-tree/unist-util-stringify-position)
+    — Stringify a node, location, or position
+
 ## License
 
 [MIT][license] © [Titus Wormer][author]
