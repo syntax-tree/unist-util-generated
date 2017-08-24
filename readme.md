@@ -50,7 +50,7 @@ Detect if [`node`][node] is [**generated**][spec].
 *   [`unist-util-remove-position`](https://github.com/syntax-tree/unist-util-remove-position)
     — Remove `position`s from a tree
 *   [`unist-util-stringify-position`](https://github.com/syntax-tree/unist-util-stringify-position)
-    — Stringify a node, location, or position
+    — Stringify a node, position, or point
 
 ## License
 
