@@ -4,21 +4,13 @@ node_js:
 - '9.0'
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
-  - provider: npm
-    skip_cleanup: true
-    email: tituswormer@gmail.com
-    api_key:
-      secure: HugL7fzYscvXKhhvisloDFA407xQB8fOOysJXpBqHx589jpcCmuxR7A1RgnzxFlxgk7v/u7B67C0UEbv2ETwD1A/wxX3wSRVBTpSDhgkl9BB8mZX0Fq+DcfcqYd+B8uVTE2xfdPcBYDtFerbXpLGGqL/ugrunqisyYZTHFOMAkyBkIhXap7KWmnJKHxyDfML5l8OyKe6aaK+0RSrXh8u5D4giurLWvLjmJjBsUq87niiujdoRr9J5p+tzTsTbzM3ryYoZ8Js1p7hG6yuMK6/3Lm1XlaCCivy8eymI5/ytngmu3p8zpOxtG3uprSNT2IiJ6jZpoAXPyqKprj++zrYcEm+kd+5B8XxtN9QpaGon5B9Lr3Aj4617iS8jzYhP2dJKg34i8hw8rfBXv48Uv5gIEbH+Z7kkez60atNuPnJFOqfnJelxNDz+IaJh3d5uLx0ygVRYAXKINkV7UhzHsAvcAoIgafylI22TRso7EiQgCAz8TTI/t7C9L9idSIjXdW2RFAXCjtdzsnlHq+xISupC79QrjI3OE1UBJnGuEL9YMzsSu3tOWxKt3/QwKGxGt9L1qx4hi2yyYK9kkclLEzxALaF1tqsSzm32RH93dQovwsNiV+eCdYmOKrfmibN5GhNDBDsRDdnkkjmC/jfMgATEQNyZ5BZhRNgcNvunJ17b3Y=
-    on:
-      tags: true
-      node: '9.0'
-  - provider: releases
-    skip_cleanup: true
-    api_key:
-      secure: bc/mWTXNG9ffRJcixXTjOiVgxcpDijMgLGaph2kOUZtzmAeKZIViaqxjVIbISodQWJPM4JiROEa2Tou3j0gCvIvIonMOkPuXG186MHI8Wp5gGahex3orC4uiuAimiiLFbzz/jH6LAeE8CccBGecWoZh0jEb0akKWWR3R4bh0uegPIQe0tnbWaA7oR+RjUpaorfQSIETYnDUdvQUK94sA+BkEDtGom2McaPPQZW/1ecj82FQdhMqQdcVVQtq/jpypj3hZsuFJBaJDZbY1ZBBq7D5G2PXreHSTUVVISXcjvaQRxtQvnQrrW3V9mY6Ro03sEnk39QAONz6IPc9C3VKBabLa2Og0CKRFmgVNiZJ+axrbPh457ARAgH0Q9W3oqEuYgsuVQEDDZBWlvjkr0RL7daKJLacGAeLw0mETewonv6ODt+ZWsWnc10Lg8y0TrKGUb+pJmqJ8YX9ytTdiPkADkm9g/2xUky7WRu69xvZN3k/wSRmCnNN4v9yAIfGc9qhYFISVo6NUjMWxCkfcpB2up2pCuTonP8aamhVPuwbBU8T+04vYLZ1n/Va8yMKmBNx+2o93n5XyD0R3Z1HVIWJE9l5CCuJKYzynMUEE3Q5Ycn2KbDKrS/5ozifbH3gB1ZjC12YlO+NZqek6upiDqfWcB4njtdqMkEVDwMUcLD2DEHU=
-    file:
-      - "unist-util-generated.js"
-      - "unist-util-generated.min.js"
-    on:
-      tags: true
-      node: '9.0'
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: bc/mWTXNG9ffRJcixXTjOiVgxcpDijMgLGaph2kOUZtzmAeKZIViaqxjVIbISodQWJPM4JiROEa2Tou3j0gCvIvIonMOkPuXG186MHI8Wp5gGahex3orC4uiuAimiiLFbzz/jH6LAeE8CccBGecWoZh0jEb0akKWWR3R4bh0uegPIQe0tnbWaA7oR+RjUpaorfQSIETYnDUdvQUK94sA+BkEDtGom2McaPPQZW/1ecj82FQdhMqQdcVVQtq/jpypj3hZsuFJBaJDZbY1ZBBq7D5G2PXreHSTUVVISXcjvaQRxtQvnQrrW3V9mY6Ro03sEnk39QAONz6IPc9C3VKBabLa2Og0CKRFmgVNiZJ+axrbPh457ARAgH0Q9W3oqEuYgsuVQEDDZBWlvjkr0RL7daKJLacGAeLw0mETewonv6ODt+ZWsWnc10Lg8y0TrKGUb+pJmqJ8YX9ytTdiPkADkm9g/2xUky7WRu69xvZN3k/wSRmCnNN4v9yAIfGc9qhYFISVo6NUjMWxCkfcpB2up2pCuTonP8aamhVPuwbBU8T+04vYLZ1n/Va8yMKmBNx+2o93n5XyD0R3Z1HVIWJE9l5CCuJKYzynMUEE3Q5Ycn2KbDKrS/5ozifbH3gB1ZjC12YlO+NZqek6upiDqfWcB4njtdqMkEVDwMUcLD2DEHU=
+  file:
+    - "unist-util-generated.js"
+    - "unist-util-generated.min.js"
+  on:
+    tags: true
+    node: '9.0'
