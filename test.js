@@ -1,7 +1,7 @@
 'use strict';
 
 var test = require('tape');
-var generated = require('./index.js');
+var generated = require('.');
 
 test('generated', function (t) {
   t.equal(
