@@ -1,14 +1,10 @@
-'use strict';
+'use strict'
 
-var test = require('tape');
-var generated = require('.');
+var test = require('tape')
+var generated = require('.')
 
-test('generated', function (t) {
-  t.equal(
-    generated(),
-    true,
-    'should not throw without node'
-  );
+test('generated', function(t) {
+  t.equal(generated(), true, 'should not throw without node')
 
   t.equal(
     generated({
@@ -29,7 +25,7 @@ test('generated', function (t) {
     }),
     false,
     'should return false when with properties'
-  );
+  )
 
   t.equal(
     generated({
@@ -37,19 +33,15 @@ test('generated', function (t) {
     }),
     true,
     'should return true when without properties'
-  );
+  )
 
   t.equal(
     generated({position: {}}),
     true,
     'should return true when without objects'
-  );
+  )
 
-  t.equal(
-    generated({}),
-    true,
-    'should return true when without position'
-  );
+  t.equal(generated({}), true, 'should return true when without position')
 
-  t.end();
-});
+  t.end()
+})

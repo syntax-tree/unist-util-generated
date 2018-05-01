@@ -13,20 +13,20 @@ npm install unist-util-generated
 ## Usage
 
 ```javascript
-var generated = require('unist-util-generated');
+var generated = require('unist-util-generated')
 
-generated({}); //=> true
+generated({}) // => true
 
 generated({
   position: {start: {}, end: {}}
-}); //=> true
+}) // => true
 
 generated({
   position: {
     start: {line: 1, column: 1},
     end: {line: 1, column: 2}
   }
-}); //=> false
+}) // => false
 ```
 
 ## API
