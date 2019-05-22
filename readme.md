@@ -1,4 +1,12 @@
-# unist-util-generated [![Build Status][build-badge]][build-page] [![Coverage Status][coverage-badge]][coverage-page]
+# unist-util-generated
+
+[![Build][build-badge]][build]
+[![Coverage][coverage-badge]][coverage]
+[![Downloads][downloads-badge]][downloads]
+[![Size][size-badge]][size]
+[![Sponsors][sponsors-badge]][collective]
+[![Backers][backers-badge]][collective]
+[![Chat][chat-badge]][chat]
 
 Check if a [**Unist**][unist] [node][] is [**generated**][spec].
 
@@ -68,11 +76,29 @@ repository, organisation, or community you agree to abide by its terms.
 
 [build-badge]: https://img.shields.io/travis/syntax-tree/unist-util-generated.svg
 
-[build-page]: https://travis-ci.org/syntax-tree/unist-util-generated
+[build]: https://travis-ci.org/syntax-tree/unist-util-generated
 
 [coverage-badge]: https://img.shields.io/codecov/c/github/syntax-tree/unist-util-generated.svg
 
-[coverage-page]: https://codecov.io/github/syntax-tree/unist-util-generated?branch=master
+[coverage]: https://codecov.io/github/syntax-tree/unist-util-generated
+
+[downloads-badge]: https://img.shields.io/npm/dm/unist-util-generated.svg
+
+[downloads]: https://www.npmjs.com/package/unist-util-generated
+
+[size-badge]: https://img.shields.io/bundlephobia/minzip/unist-util-generated.svg
+
+[size]: https://bundlephobia.com/result?p=unist-util-generated
+
+[sponsors-badge]: https://opencollective.com/unified/sponsors/badge.svg
+
+[backers-badge]: https://opencollective.com/unified/backers/badge.svg
+
+[collective]: https://opencollective.com/unified
+
+[chat-badge]: https://img.shields.io/badge/join%20the%20community-on%20spectrum-7b16ff.svg
+
+[chat]: https://spectrum.chat/unified/syntax-tree
 
 [npm]: https://docs.npmjs.com/cli/install
 
