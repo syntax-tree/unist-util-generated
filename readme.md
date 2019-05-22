@@ -8,32 +8,27 @@
 [![Backers][backers-badge]][collective]
 [![Chat][chat-badge]][chat]
 
-Check if a [**Unist**][unist] [node][] is [**generated**][spec].
+[**unist**][unist] utility to check if a [node][] is [*generated*][generated].
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install unist-util-generated
 ```
 
 ## Usage
 
-```javascript
+```js
 var generated = require('unist-util-generated')
 
 generated({}) // => true
 
-generated({
-  position: {start: {}, end: {}}
-}) // => true
+generated({position: {start: {}, end: {}}}) // => true
 
 generated({
-  position: {
-    start: {line: 1, column: 1},
-    end: {line: 1, column: 2}
-  }
+  position: {start: {line: 1, column: 1}, end: {line: 1, column: 2}}
 }) // => false
 ```
 
@@ -41,7 +36,7 @@ generated({
 
 ### `generated(node)`
 
-Detect if [`node`][node] is [**generated**][spec].
+Check if [`node`][node] is [*generated*][generated].
 
 ###### Parameters
 
@@ -62,11 +57,13 @@ Detect if [`node`][node] is [**generated**][spec].
 
 ## Contribute
 
-See [`contributing.md` in `syntax-tree/unist`][contributing] for ways to get
+See [`contributing.md` in `syntax-tree/.github`][contributing] for ways to get
 started.
+See [`support.md`][support] for ways to get help.
 
-This organisation has a [Code of Conduct][coc].  By interacting with this
-repository, organisation, or community you agree to abide by its terms.
+This project has a [Code of Conduct][coc].
+By interacting with this repository, organisation, or community you agree to
+abide by its terms.
 
 ## License
 
@@ -106,12 +103,14 @@ repository, organisation, or community you agree to abide by its terms.
 
 [author]: https://wooorm.com
 
+[contributing]: https://github.com/syntax-tree/.github/blob/master/contributing.md
+
+[support]: https://github.com/syntax-tree/.github/blob/master/support.md
+
+[coc]: https://github.com/syntax-tree/.github/blob/master/code-of-conduct.md
+
 [unist]: https://github.com/syntax-tree/unist
 
 [node]: https://github.com/syntax-tree/unist#node
 
-[spec]: https://github.com/syntax-tree/unist#location
-
-[contributing]: https://github.com/syntax-tree/unist/blob/master/contributing.md
-
-[coc]: https://github.com/syntax-tree/unist/blob/master/code-of-conduct.md
+[generated]: https://github.com/syntax-tree/unist#generated
