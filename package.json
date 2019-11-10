@@ -1,6 +1,6 @@
 {
   "name": "unist-util-generated",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Check if a Unist node is generated",
   "license": "MIT",
   "keywords": [
