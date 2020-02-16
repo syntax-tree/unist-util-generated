@@ -18,7 +18,7 @@
 npm install unist-util-generated
 ```
 
-## Usage
+## Use
 
 ```js
 var generated = require('unist-util-generated')
@@ -50,6 +50,8 @@ Check if [`node`][node] is [*generated*][generated].
 
 *   [`unist-util-position`](https://github.com/syntax-tree/unist-util-position)
     — Get the position of nodes
+*   [`unist-util-source`](https://github.com/syntax-tree/unist-util-source)
+    — Get the source of a node or position
 *   [`unist-util-remove-position`](https://github.com/syntax-tree/unist-util-remove-position)
     — Remove `position`s from a tree
 *   [`unist-util-stringify-position`](https://github.com/syntax-tree/unist-util-stringify-position)
@@ -61,8 +63,8 @@ See [`contributing.md` in `syntax-tree/.github`][contributing] for ways to get
 started.
 See [`support.md`][support] for ways to get help.
 
-This project has a [Code of Conduct][coc].
-By interacting with this repository, organisation, or community you agree to
+This project has a [code of conduct][coc].
+By interacting with this repository, organization, or community you agree to
 abide by its terms.
 
 ## License
