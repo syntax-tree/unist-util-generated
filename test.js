@@ -3,7 +3,7 @@
 var test = require('tape')
 var generated = require('.')
 
-test('generated', function(t) {
+test('generated', function (t) {
   t.equal(generated(), true, 'should not throw without node')
 
   t.equal(
