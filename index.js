@@ -1,8 +1,4 @@
-'use strict'
-
-module.exports = generated
-
-function generated(node) {
+export function generated(node) {
   return (
     !node ||
     !node.position ||

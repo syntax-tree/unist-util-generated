@@ -1,5 +1,2 @@
 coverage/
-unist-util-generated.js
-unist-util-generated.min.js
-*.json
 *.md

@@ -12,6 +12,9 @@
 
 ## Install
 
+This package is [ESM only](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c):
+Node 12+ is needed to use it and it must be `import`ed instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -21,7 +24,7 @@ npm install unist-util-generated
 ## Use
 
 ```js
-var generated = require('unist-util-generated')
+import {generated} from 'unist-util-generated'
 
 generated({}) // => true
 
@@ -33,6 +36,9 @@ generated({
 ```
 
 ## API
+
+This package exports the following identifiers: `generated`.
+There is no default export.
 
 ### `generated(node)`
 

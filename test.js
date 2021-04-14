@@ -1,7 +1,5 @@
-'use strict'
-
-var test = require('tape')
-var generated = require('.')
+import test from 'tape'
+import {generated} from './index.js'
 
 test('generated', function (t) {
   t.equal(generated(), true, 'should not throw without node')
