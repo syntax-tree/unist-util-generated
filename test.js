@@ -1,7 +1,7 @@
 import test from 'tape'
 import {generated} from './index.js'
 
-test('generated', function (t) {
+test('generated', (t) => {
   t.equal(generated(), true, 'should not throw without node')
 
   t.equal(
