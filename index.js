@@ -1,14 +1,14 @@
 /**
- * @typedef {Object} PointLike
+ * @typedef PointLike
  * @property {number} [line]
  * @property {number} [column]
  * @property {number} [offset]
  *
- * @typedef {Object} PositionLike
+ * @typedef PositionLike
  * @property {PointLike} [start]
  * @property {PointLike} [end]
  *
- * @typedef {Object} NodeLike
+ * @typedef NodeLike
  * @property {PositionLike} [position]
  */
 
