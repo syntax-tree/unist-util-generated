@@ -1,8 +1,15 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import {generated} from './index.js'
+import * as mod from './index.js'
 
 test('generated', () => {
+  assert.deepEqual(
+    Object.keys(mod).sort(),
+    ['generated'],
+    'should expose the public api'
+  )
+
   assert.equal(generated(), true, 'should not throw without node')
 
   assert.equal(
