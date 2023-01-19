@@ -1,10 +1,11 @@
-import test from 'tape'
+import assert from 'node:assert/strict'
+import test from 'node:test'
 import {generated} from './index.js'
 
-test('generated', (t) => {
-  t.equal(generated(), true, 'should not throw without node')
+test('generated', () => {
+  assert.equal(generated(), true, 'should not throw without node')
 
-  t.equal(
+  assert.equal(
     generated({
       position: {
         start: {
@@ -23,7 +24,7 @@ test('generated', (t) => {
     'should return false when with properties'
   )
 
-  t.equal(
+  assert.equal(
     generated({
       position: {start: {}, end: {}}
     }),
@@ -31,13 +32,11 @@ test('generated', (t) => {
     'should return true when without properties'
   )
 
-  t.equal(
+  assert.equal(
     generated({position: {}}),
     true,
     'should return true when without objects'
   )
 
-  t.equal(generated({}), true, 'should return true when without position')
-
-  t.end()
+  assert.equal(generated({}), true, 'should return true when without position')
 })
