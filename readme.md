@@ -26,7 +26,8 @@
 
 ## What is this?
 
-This utility can be used to check if a node is said to be [generated][].
+This utility can be used to check if a node is said to be
+[generated][generated-term].
 
 ## When should I use this?
 
@@ -43,7 +44,7 @@ To display positional info to users, use
 ## Install
 
 This package is [ESM only][esm].
-In Node.js (version 12.20+, 14.14+, 16.0+, 18.0+), install with [npm][]:
+In Node.js (version 14.14+ and 16.0+), install with [npm][]:
 
 ```sh
 npm install unist-util-generated
@@ -52,14 +53,14 @@ npm install unist-util-generated
 In Deno with [`esm.sh`][esmsh]:
 
 ```js
-import {generated} from "https://esm.sh/unist-util-generated@2"
+import {generated} from 'https://esm.sh/unist-util-generated@2'
 ```
 
 In browsers with [`esm.sh`][esmsh]:
 
 ```html
 <script type="module">
-  import {generated} from "https://esm.sh/unist-util-generated@2?bundle"
+  import {generated} from 'https://esm.sh/unist-util-generated@2?bundle'
 </script>
 ```
 
@@ -79,16 +80,21 @@ generated({
 
 ## API
 
-This package exports the identifier `generated`.
+This package exports the identifier [`generated`][generated].
 There is no default export.
 
 ### `generated(node)`
 
-Check if `node` ([`Node`][node]) is *[generated][]*.
+Check if `node` is generated.
+
+###### Parameters
+
+*   `node` ([`Node`][node])
+    — node to check
 
 ###### Returns
 
-Whether `node` is generated (`boolean`).
+Whether `node` is generated (does not have positional info) (`boolean`).
 
 ## Types
 
@@ -99,7 +105,7 @@ It exports no additional types.
 
 Projects maintained by the unified collective are compatible with all maintained
 versions of Node.js.
-As of now, that is Node.js 12.20+, 14.14+, 16.0+, and 18.0+.
+As of now, that is Node.js 14.14+ and 16.0+.
 Our projects sometimes work with older versions, but this is not guaranteed.
 
 ## Related
@@ -179,8 +185,10 @@ abide by its terms.
 
 [node]: https://github.com/syntax-tree/unist#node
 
-[generated]: https://github.com/syntax-tree/unist#generated
+[generated-term]: https://github.com/syntax-tree/unist#generated
 
 [unist-util-position]: https://github.com/syntax-tree/unist-util-position
 
 [unist-util-stringify-position]: https://github.com/syntax-tree/unist-util-stringify-position
+
+[generated]: #generatednode
