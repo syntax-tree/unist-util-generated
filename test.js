@@ -1,49 +1,52 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import {generated} from './index.js'
-import * as mod from './index.js'
 
-test('generated', () => {
-  assert.deepEqual(
-    Object.keys(mod).sort(),
-    ['generated'],
-    'should expose the public api'
-  )
+test('generated', async function (t) {
+  await t.test('should expose the public api', async function () {
+    assert.deepEqual(Object.keys(await import('./index.js')).sort(), [
+      'generated'
+    ])
+  })
 
-  assert.equal(generated(), true, 'should not throw without node')
+  await t.test('should not throw without node', async function () {
+    assert.equal(generated(), true)
+  })
 
-  assert.equal(
-    generated({
-      position: {
-        start: {
-          line: 1,
-          column: 1,
-          offset: 0
-        },
-        end: {
-          line: 1,
-          column: 2,
-          offset: 1
+  await t.test('should return false when with properties', async function () {
+    assert.equal(
+      generated({
+        position: {
+          start: {
+            line: 1,
+            column: 1,
+            offset: 0
+          },
+          end: {
+            line: 1,
+            column: 2,
+            offset: 1
+          }
         }
-      }
-    }),
-    false,
-    'should return false when with properties'
-  )
+      }),
+      false
+    )
+  })
 
-  assert.equal(
-    generated({
-      position: {start: {}, end: {}}
-    }),
-    true,
-    'should return true when without properties'
-  )
+  await t.test('should return true when without properties', async function () {
+    assert.equal(
+      generated({
+        position: {start: {}, end: {}}
+      }),
+      true
+    )
+  })
 
-  assert.equal(
-    generated({position: {}}),
-    true,
-    'should return true when without objects'
-  )
+  await t.test('should return true when without objects', async function () {
+    assert.equal(generated({position: {}}), true)
+  })
 
-  assert.equal(generated({}), true, 'should return true when without position')
+  await t.test('should return true when without position', async function () {
+    assert.equal(generated({}), true)
+  })
 })
