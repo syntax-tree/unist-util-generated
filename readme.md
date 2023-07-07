@@ -53,14 +53,14 @@ npm install unist-util-generated
 In Deno with [`esm.sh`][esmsh]:
 
 ```js
-import {generated} from 'https://esm.sh/unist-util-generated@2'
+import {generated} from 'https://esm.sh/unist-util-generated@3'
 ```
 
 In browsers with [`esm.sh`][esmsh]:
 
 ```html
 <script type="module">
-  import {generated} from 'https://esm.sh/unist-util-generated@2?bundle'
+  import {generated} from 'https://esm.sh/unist-util-generated@3?bundle'
 </script>
 ```
 
